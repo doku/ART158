@@ -1,0 +1,78 @@
+
+html body .container .row .col #content .col-md-4{
+  height: 100%;
+
+}
+
+.row{
+  background: lightgrey;
+  display: block;
+  height: 100px;
+
+}
+
+.col{
+
+
+border-radius: 8px;
+
+
+
+
+}
+#header{
+  padding: 30px;
+
+
+
+}
+#footer{
+ margin-top:150px;
+  padding: 30px;
+
+}
+#content{
+  background: white;
+
+
+
+}
+
+
+#col1{
+  background: lightgreen;
+  transition: all 3s;
+  border-radius: 8px;
+  margin:2px;
+}
+#col1:hover{
+  transform: skew(30deg);
+
+
+}
+
+
+#col2{
+  background: lightblue;
+  transition: all 3s;
+  border-radius: 8px;
+  margin: 2px;
+}
+#col2:hover{
+  transform: translate(30px, 50px);
+
+
+}
+
+
+#col3{
+  transition: all 3s;
+  background: lightpink;
+  border-radius: 8px;
+}
+
+#col3:hover{
+  transform: rotate(90deg);
+
+
+}

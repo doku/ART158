@@ -1,0 +1,78 @@
+
+
+
+.row{
+  background: lightgrey;
+  display: block;
+  height: 100px;
+
+}
+
+.col{
+height: 50px;
+display: inline;
+
+border-radius: 8px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding-top: 1px;
+padding-bottom: 1px;
+width: 33%;
+
+}
+#header{
+  padding: 30px;
+
+
+
+}
+#footer{
+ margin-top:150px;
+  padding: 30px;
+
+}
+#content{
+  background: white;
+display: inline;
+
+
+}
+
+
+#col1{
+  background: lightgreen;
+  transition: all 3s;
+  width: 50%;
+
+}
+#col1:hover{
+  transform: skew(30deg);
+
+
+}
+
+
+#col2{
+  background: lightblue;
+  transition: all 3s;
+  width:25%;
+
+}
+#col2:hover{
+  transform: translate(30px, 50px);
+
+
+}
+
+
+#col3{
+  transition: all 3s;
+  background: lightpink;
+  width: 25%;
+}
+
+#col3:hover{
+  transform: rotate(90deg);
+
+
+}
