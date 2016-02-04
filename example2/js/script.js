@@ -31,7 +31,7 @@ $(document).ready(function(){ // Detects of the page is "ready"
 
     });
     $('#pan-btn-d').click(function() {
-      $('#pan-image').attr('src', "images/panorama4.jpg");
+      $('#pan-image').attr('src', "images/panorama4.JPG");
 
     });
 
