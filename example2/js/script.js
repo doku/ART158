@@ -1,3 +1,10 @@
+
+// assignment use jquery addClass().
+// use fadeIn() class
+// use fadeOut() class
+
+
+
 var panoArray= ['panorama1.jpg', 'panorama2.jpg', 'panorama3.jpg', 'panorama4.JPG'];
 
 var callback;
