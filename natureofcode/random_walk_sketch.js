@@ -19,7 +19,7 @@ function draw() {
   y = y + randy;
   console.log(mouseX);
   console.log(mouseY);
-  noStroke();
+  //noStroke();
   fill(255,10);
   ellipse(x, y, 5, 5);
 }
