@@ -8,7 +8,7 @@ var randy;
 
 function setup() {
   createCanvas(640, 480);
-  background(0);
+  background(255);
   //frameRate(1);
   x = width/2;
   y = height/2;
@@ -23,6 +23,6 @@ function draw() {
   y = constrain(y, 0, height);
   
   //noStroke();
-  fill(50);
+  fill(0);
   ellipse(x, y, 5, 5);
 }
