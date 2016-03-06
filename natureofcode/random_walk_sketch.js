@@ -19,8 +19,8 @@ function draw() {
   randy = randomGaussian(0, 5);
   x = x + randx;
   y = y + randy;
-  x = contrain(x, 0, width);
-  y = contrain(y, 0, height);
+  x = constrain(x, 0, width);
+  y = constrain(y, 0, height);
   
   //noStroke();
   fill(50);
