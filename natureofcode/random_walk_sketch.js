@@ -15,12 +15,13 @@ function setup() {
 }
 
 function draw() {
-  randx = randomGaussian(0, 10);
-  randy = randomGaussian(0, 10);
+  randx = randomGaussian(0, 5);
+  randy = randomGaussian(0, 5);
   x = x + randx;
   y = y + randy;
-  console.log(mouseX);
-  console.log(mouseY);
+  x = contrain(x, 0, width);
+  y = contrain(y, 0, height);
+  
   //noStroke();
   fill(50);
   ellipse(x, y, 5, 5);
