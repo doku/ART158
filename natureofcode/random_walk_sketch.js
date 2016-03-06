@@ -17,8 +17,8 @@ function draw() {
   randy = randomGaussian(0,10);
   x = x + randx;
   y = y + randy;
-  console.log(x);
-  
+  console.log(mouseX);
+  console.log(mouseY);
   noStroke();
   fill(255,10);
   ellipse(x, y, 5, 5);
