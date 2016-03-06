@@ -1,6 +1,6 @@
 
-var x = 0;
-var y = 0;
+var x = 250;
+var y = 200;
 var randx;
 var randy;
 
@@ -14,7 +14,7 @@ function setup() {
 
 function draw() {
   randx = randomGaussian(0, 10);
-  randy = randomGaussian(0,10);
+  randy = randomGaussian(0, 10);
   x = x + randx;
   y = y + randy;
   console.log(mouseX);
