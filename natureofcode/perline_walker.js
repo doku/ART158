@@ -15,6 +15,8 @@ function draw(){
   noiseYStep += 0.01;
   x = noise(noiseXStep);
   y = noise(noiseYStep);
+  x = constrain(x, 0, width);
+  y = constrain(y, 0, height);
   noStroke();
   fill('rgba(0,0,0,.1)');
   ellipse(x, y, 5, 5);
