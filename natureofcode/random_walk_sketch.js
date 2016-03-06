@@ -9,7 +9,9 @@ var randy;
 function setup() {
   createCanvas(640, 480);
   background(150);
-  frameRate(1);
+  //frameRate(1);
+  x = width/2;
+  y = height/2;
 }
 
 function draw() {
@@ -20,6 +22,6 @@ function draw() {
   console.log(mouseX);
   console.log(mouseY);
   //noStroke();
-  fill(255,10);
+  fill(50);
   ellipse(x, y, 5, 5);
 }
