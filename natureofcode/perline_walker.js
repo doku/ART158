@@ -13,8 +13,8 @@ var noiseYStep = 100.01;
 function draw(){
   noiseXStep += 0.01;
   noiseYStep += 0.01;
-  x = x + noise(noiseXStep);
-  y = y + noise(noiseYStep);
+  x = noise(noiseXStep) * width;
+  y = noise(noiseYStep) * height;
   x = constrain(x, 0, width);
   y = constrain(y, 0, height);
   noStroke();
