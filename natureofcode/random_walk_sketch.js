@@ -8,7 +8,7 @@ var randy;
 
 function setup() {
   createCanvas(640, 480);
-  background(0);
+  background(150);
   frameRate(1);
 }
 
@@ -17,6 +17,7 @@ function draw() {
   randy = randomGaussian(0,10);
   x = x + randx;
   y = y + randy;
+  console.log(x);
   
   noStroke();
   fill(255,10);
