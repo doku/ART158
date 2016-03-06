@@ -23,6 +23,6 @@ function draw() {
   y = constrain(y, 0, height);
   
   //noStroke();
-  fill(0);
+  fill(rgba(0,0,0,.1));
   ellipse(x, y, 5, 5);
 }
