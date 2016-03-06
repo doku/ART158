@@ -8,7 +8,7 @@ function setup(){
 
 }
 var noiseXStep = 0.01;
-var noiseYStep = 0.01;
+var noiseYStep = 100.01;
 
 function draw(){
   noiseXStep += 0.01;
