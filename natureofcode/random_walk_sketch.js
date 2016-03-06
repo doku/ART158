@@ -8,7 +8,8 @@ var randy;
 
 function setup() {
   createCanvas(640, 480);
-
+  background(0);
+  frameRate(1);
 }
 
 function draw() {
