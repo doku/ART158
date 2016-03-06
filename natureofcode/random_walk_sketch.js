@@ -1,9 +1,14 @@
+
+var x = 0;
+var y = 0;
+var randx;
+var randy;
+
+
+
 function setup() {
   createCanvas(640, 480);
-  var x = 0;
-  var y = 0;
-  var randx;
-  var randy;
+
 }
 
 function draw() {
