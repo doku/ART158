@@ -22,7 +22,7 @@ function draw() {
   x = constrain(x, 0, width);
   y = constrain(y, 0, height);
   
-  //noStroke();
+  noStroke();
   fill('rgba(0,0,0,.1)');
   ellipse(x, y, 5, 5);
 }
