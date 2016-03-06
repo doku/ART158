@@ -1,7 +1,7 @@
 
 function setup(){
   createCanvas(640,480);
-  background(0);
+  background(255);
   x = width/2;
   y = height/2;
 
