@@ -14,6 +14,9 @@ function setup(){
 function draw(){
   background(255);
   //ellipse(vLocation.x, vLocation.y,80,80);
+  textSize(32);
+  text("$", 10,50);
+  fill()
   
   vLocation.add(vSpeed);
   ellipse(vLocation.x, vLocation.y,30,30);
