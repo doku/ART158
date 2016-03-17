@@ -13,9 +13,10 @@ function setup(){
 
 function draw(){
   background(255);
-  ellipse(vLocation.x, vLocation.y,80,80);
+  //ellipse(vLocation.x, vLocation.y,80,80);
   
   vLocation.add(vSpeed);
+  ellipse(vLocation.x, vLocation.y,30,30);
   
   if((vLocation.x > width) || (vLocacation.x < 0)){
     vSpeed.x = vSpeed.x * -1;
