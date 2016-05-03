@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <script src="aframe.min.js"></script>
+  </head>
+  <body>
+<a-scene>
+  <a-box color="#6173F4" width="4" height="10" depth="2"></a-box>
+</a-scene>
+  
+  
+  
+  </body>
+</html>
+
+
+
+
+
+
+
