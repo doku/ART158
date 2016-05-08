@@ -73,10 +73,7 @@
         <!--video id="videoa" autoplay crossorigin="anonymous" src="http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_2mb.mp4"-->
          
        
-        <a-mixin id="podium" geometry="primitive: cylinder; height:5.5; radius:0.2;"></a-mixin>
-        <a-mixin id="toggle-sphere" geometry="primitive: sphere; radius:0.2;" material="color: red" position="0 4.3 0"></a-mixin>
-        <a-mixin id="yellow-orange" material="color: #FFD50D;"></a-mixin>
-      
+  
 	        <script id="pics" type="text/x-nunjucks-template">
            {% for x in range(1,44) %}
                <a-entity geometry="primitive: plane; height:16; width: 20"
@@ -139,9 +136,9 @@
 
         <!-- Lights -->
       
-        <!--a-entity light="color: #efefef; intensity: 1.5; type: point;" position="-1 1 0">
+        <a-entity light="color: #efefef; intensity: 1.5; type: point;" position="-1 1 0">
             <a-animation id="point-light-anim" begin="point-light-start" attribute="light.intensity" to="0"></a-animation>
-        </a-entity-->
+        </a-entity>
 
         <!-- Instruct Light -->
       
@@ -186,120 +183,7 @@
         </a-entity>
 
 
-      
-        <!--a-entity id="orb" geometry="primitive: box; height:1; width:1; depth:1;" material="color: orange;" position="34 2.5 34">
-            <a-animation id="orb-anim" attribute="position" begin="start-orb" to="0 4 0" dur="2000"></a-animation>
-            <a-animation attribute="rotation"
-                         dur="10000"
-                         fill="forwards"
-                         to="360 360 360"
-                         repeat="indefinite"></a-animation>
-        </a-entity-->
 
-
-        <!-- Podiums -->
-        <!--a-entity id="podium-1" position="34 -1 34">
-            <a-entity id="podium-1-toggle" mixin="toggle-sphere"></a-entity>
-            <a-entity mixin="podium yellow-orange"></a-entity>
-        </a-entity>
-
-        <a-entity position="0 -1 0">
-            <a-entity mixin="toggle-sphere"></a-entity>
-            <a-entity mixin="podium yellow-orange"></a-entity>
-        </a-entity-->
-
-
-        <!-- Ground -->
-        <!--a-entity
-                geometry="primitive: plane; height: 800; width: 800"
-                material="color: #725D43; side: double;"
-                position="0 0 0"
-                rotation="90 0 0">
-        </a-entity-->
-
-        <!-- Walls -->
-      <!--
-        <a-entity
-                geometry="primitive: plane; height: 80; width: 80"
-                material="src: #grass; color: #ccc; side: double"
-                position="-40 2 0"
-                rotation="0 90 0">
-        </a-entity>
-
-        <a-entity
-                geometry="primitive: plane; height: 80; width: 80"
-                material="color: #ccc; side: double"
-                position="0 2 -40"
-                rotation="0 0 0">
-        </a-entity>
-      -->
-        <!--a-entity geometry="primitive: cylinder; height:15; radius:2;"
-                  material="color: #FFD50D;"
-                  position="25 0 0"
-        </a-entity>
-        <a-entity geometry="primitive: sphere; height:15; radius:10"
-                  material="color: #FFD50D;"
-                  position="25 10 0" 
-        </a-entity-->
-      <!--a-entity geometry="primitive: sphere; height: 2; radius: 2"
-                material="color: white"
-                position="10 10 0">
-      </a-entity-->
-      <!--a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="10 5 -15"
-                rotation="0 120 0">
-      <a-image src="#pic1" height="8" width="10"></a-image>  
-      </a-entity> 
-      
-      <a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="-10 5 -30"
-                rotation="0 45 0">
-      <a-image src="#pic2" height="8" width="10"></a-image>  
-      </a-entity> 
-      
-            <a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="10 5 -45"
-                rotation="0 120 0">
-      <a-image src="#pic3" height="8" width="10"></a-image>  
-      </a-entity> 
-      
-      <a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="-10 5 -60"
-                rotation="0 45 0">
-      <a-image src="#pic4" height="8" width="10"></a-image>  
-      </a-entity> 
-      
-            <a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="10 5 -75"
-                rotation="0 120 0">
-      <a-image src="#pic5" height="8" width="10"></a-image>  
-      </a-entity> 
-      
-      <a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="-10 5 -90"
-                rotation="0 45 0">
-      <a-image src="#pic6" height="8" width="10"></a-image>  
-      </a-entity> 
-      
-            <a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="10 5 -105"
-                rotation="0 120 0">
-      <a-image src="#pic7" height="8" width="10"></a-image>  
-      </a-entity> 
-      
-      <a-entity geometry="primitive: plane; height:8; width: 10"
-                material="color: #ccc; side: double"
-                position="-10 5 -120"
-                rotation="0 45 0">
-      <a-image src="#pic8" height="8" width="10"></a-image>  
-      </a-entity--> 
             <!--a-entity geometry="primitive: plane; height:8; width: 10"
                 material="color: #ccc; side: double"
                 position="10 5 15"
@@ -307,7 +191,7 @@
             <a-video src="#videoa" height="8" width="10"></a-video>
         </a-entity-->
  
-		<a-entity collada-model="#cup" position="0 0 -650"></a-entity>
+		<a-entity collada-model="#cup"></a-entity>
        <a-entity template="src: #pics" position="0 0 0" rotation="0 0 0"></a-entity>
         
       
