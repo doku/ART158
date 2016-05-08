@@ -60,6 +60,9 @@
 	  <img id="pic41" crossorigin="anonymous" src="images/41.gif">
 	  <img id="pic42" crossorigin="anonymous" src="images/42.gif">
 	  <img id="pic43" crossorigin="anonymous" src="images/43.gif">
+	  
+	  <audio id="grind" src="sounds/coffee-grind.mp3">
+	  
         <!--video id="videoa" autoplay crossorigin="anonymous" src="http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_2mb.mp4"-->
          
        
@@ -68,11 +71,15 @@
         <a-mixin id="yellow-orange" material="color: #FFD50D;"></a-mixin>
       
 	        <script id="pics" type="text/x-nunjucks-template">
-           {% for x in range(1,43) %}
+           {% for x in range(1,44) %}
                <a-entity geometry="primitive: plane; height:16; width: 20"
                 material="color: #ccc; side: double"
                 position="{{10 + (x%2)*-20}} 5 {{-15*x}}"
-                rotation="0 {% if x % 2 %}45{% else %}120{% endif%} 0">
+                rotation="0 {% if x % 2 %}45{% else %}120{% endif%} 0"
+				{% if x == 7 %}
+				sound="src: #grind; autoplay: true; "
+				{% endif %}
+				>
               <a-image src="#pic{{ x }}" height="16" width="20"></a-image>  
               </a-entity> 
         
