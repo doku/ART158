@@ -70,7 +70,7 @@
 	  <audio id="espressoMachine" src="sounds/Slurping.mp3">
 	  
 	  <a-asset-item id="cup" src="cup.dae"></a-asset-item>
-	  <video id="roast" autoplay loop="false" volumn="0.2" src="videos/EthiopiaRoastingCoffee360video2016.mp4">
+	  <video id="roast" autoplay="false" loop="false" volumn="0.2" src="videos/EthiopiaRoastingCoffee360video2016.mp4">
         <!--video id="videoa" autoplay crossorigin="anonymous" src="http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_2mb.mp4"-->
          
        
@@ -181,7 +181,7 @@
  
 		<a-collada-model src="#cup" position="0 0 0"></a-collada-model>
        <a-entity template="src: #pics" position="0 0 0" rotation="0 0 0"></a-entity>
-        <a-videosphere src="#roast"></a-videosphere>
+        <a-videosphere src="#roast" begin="10000"></a-videosphere>
       
         
       <!--a-sky src="https://cdn.eso.org/images/screen/b04.jpg"></a-sky--> 
