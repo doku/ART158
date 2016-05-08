@@ -67,6 +67,7 @@
 	  <audio id="coffeePour" src="sounds/coffee-pour.mp3">
 	  <audio id="coffeeBubbles" src="sounds/Espresso-Bubbles.mp3">
 	  <audio id="espressoMachine" src="sounds/Espresso-Machine.mp3">
+	  <audio id="espressoMachine" src="sounds/Slurping.mp3">
         <!--video id="videoa" autoplay crossorigin="anonymous" src="http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_2mb.mp4"-->
          
        
@@ -95,9 +96,13 @@
 				{% if x == 30 %}
 				sound="src: sounds/Espresso-Bubbles.mp3; autoplay:true; loop: true;"
 				{% endif %}
-			    {% if x == 14 %}
+			    {% if x == 14 && x == 18 %}
 				sound="src: sounds/Espresso-Machine.mp3; autoplay:true; loop: true;"
 				{% endif %}
+				{% if x == 41 %}
+				sound="src: sounds/Slurping.mp3; autoplay:true; loop:true;"
+				{% endif %}
+				
 				>
               <a-image src="#pic{{ x }}" height="16" width="20"></a-image>  
               </a-entity> 
