@@ -68,6 +68,8 @@
 	  <audio id="coffeeBubbles" src="sounds/Espresso-Bubbles.mp3">
 	  <audio id="espressoMachine" src="sounds/Espresso-Machine.mp3">
 	  <audio id="espressoMachine" src="sounds/Slurping.mp3">
+	  
+	  <a-asset-item id="cup" src="cup.dae"></a-asset-item>
         <!--video id="videoa" autoplay crossorigin="anonymous" src="http://www.sample-videos.com/video/mp4/240/big_buck_bunny_240p_2mb.mp4"-->
          
        
@@ -96,7 +98,10 @@
 				{% if x == 30 %}
 				sound="src: sounds/Espresso-Bubbles.mp3; autoplay:true; loop: true;"
 				{% endif %}
-			    {% if x == 14 && x == 18 %}
+			    {% if x == 14 %}
+				sound="src: sounds/Espresso-Machine.mp3; autoplay:true; loop: true;"
+				{% endif %}
+			    {% if x == 20 %}
 				sound="src: sounds/Espresso-Machine.mp3; autoplay:true; loop: true;"
 				{% endif %}
 				{% if x == 41 %}
@@ -134,9 +139,9 @@
 
         <!-- Lights -->
       
-        <a-entity light="color: #efefef; intensity: 1.5; type: point;" position="-1 1 0">
+        <!--a-entity light="color: #efefef; intensity: 1.5; type: point;" position="-1 1 0">
             <a-animation id="point-light-anim" begin="point-light-start" attribute="light.intensity" to="0"></a-animation>
-        </a-entity>
+        </a-entity-->
 
         <!-- Instruct Light -->
       
@@ -302,8 +307,8 @@
             <a-video src="#videoa" height="8" width="10"></a-video>
         </a-entity-->
  
-
-      <a-entity template="src: #pics" position="0 0 0" rotation="0 0 0"></a-entity>
+		<a-entity collada-model="#cup" position="0 0 -650"></a-entity>
+       <a-entity template="src: #pics" position="0 0 0" rotation="0 0 0"></a-entity>
         
       
         <a-entity template="src: #stars" data-num="10" position="20 0 0" rotation="0 90 0"> </a-entity>
