@@ -77,6 +77,9 @@
                 material="color: #ccc; side: double"
                 position="{{10 + (x%2)*-20}} 5 {{-15*x}}"
                 rotation="0 {% if x % 2 %}45{% else %}120{% endif%} 0"
+				{% if x == 4 %}
+					sound="src: sounds/coffee-pouring-beans.mp3; autoplay: true; loop: true; volumn: 1;"
+				{% endif %}
 				{% if x == 7 %}
 				sound="src: sounds/coffee-grind.mp3; autoplay: true; loop: true; volumn: 1;"
 				{% endif %}
